@@ -198,3 +198,5 @@ function! s:PlaceSigns()
         let l:id = l:id + 1
     endfor
 endfunction
+
+autocmd BufWritePost <buffer> :call CheckBuffer()
